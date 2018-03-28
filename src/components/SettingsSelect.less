@@ -1,0 +1,103 @@
+@import "../../node_modules/@likethemammal/overwatch-general/lib/colors.less";
+
+@item_width: 377px;
+
+.container {
+    &:hover {
+        .label {
+            background: @gray_faded_setting_hover;
+        }
+    }
+
+    //low browser support, so cant be combined with :hover selector
+    &:focus-within {
+        .label {
+            background: @gray_faded_setting_hover;
+        }
+    }
+}
+
+.inner {
+    position: relative;
+    padding-right: @item_width + 7px;
+}
+
+.__text {
+    composes: _font_general from '@likethemammal/overwatch-general/lib/general.css';
+    height: 4.3rem;
+    line-height: 4.4rem;
+    color: hsl(0, 0%, 90%);
+}
+
+.label {
+    composes: __text;
+    composes: cf from '@likethemammal/general-components/bin/general.css';
+    padding-left: 22px;
+    background: @black_faded_setting;
+    transition: background 100ms ease-in;
+    font-size: 2.3rem;
+}
+
+.label__selected {
+    composes: label;
+    background: @gray_faded_setting_hover;
+}
+
+.select {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.list_override {
+    padding-right: 0 !important;
+}
+
+.list_root_override {
+    width: 100% !important;
+}
+
+.item {
+    composes: __text;
+    width: @item_width;
+    line-height: 4.5rem;
+    padding-left: 20px;
+    letter-spacing: 0.01rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.list_item {
+    composes: item;
+    background: @blue_solid;
+
+    &:focus {
+        border: 0;
+        outline: 0;
+        background: @blue_solid_hover_dark;
+    }
+
+    &:hover {
+        background: @blue_solid_hover_dark;
+    }
+}
+
+.active {
+    composes: item;
+    background: @blue_faded_hover;
+    border: 0;
+    text-align: left;
+
+    &:focus {
+        border: 0;
+        outline: 0;
+    }
+}
+
+.icon_container {
+    composes: _icon_container from '@likethemammal/overwatch-general/lib/general.css';
+    position: absolute;
+    right: 5px;
+    left: auto;
+    top: -1px;
+}
