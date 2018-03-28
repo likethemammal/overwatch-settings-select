@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/likethemammal/overwatch-settings-stepper.svg?branch=master)](https://travis-ci.org/likethemammal/overwatch-settings-stepper)
-[![Coverage Status](https://coveralls.io/repos/github/likethemammal/overwatch-settings-stepper/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/overwatch-settings-stepper?branch=master)
+[![Build Status](https://travis-ci.org/likethemammal/overwatch-settings-select.svg?branch=master)](https://travis-ci.org/likethemammal/overwatch-settings-select)
+[![Coverage Status](https://coveralls.io/repos/github/likethemammal/overwatch-settings-select/badge.svg?branch=master)](https://coveralls.io/github/likethemammal/overwatch-settings-select?branch=master)
 
-overwatch-settings-stepper
+overwatch-settings-select
 =========
 
-A React component modeling the Overwatch site side navigation
+A React component modeling the Overwatch Settings select element
 
 ## Installation
 
@@ -38,8 +38,10 @@ http://www.myfonts.com/fonts/urw/futura-no-2/futura-no2-d-demi-bold/
 | defaultColor | string | #323c50 |  |
 | activeColor | string | #ffffff |  |
 | textColor | string | #00c3ff |  |
-| items | array | null | array of objects, with required keys `id`, `label`, `icon`, `Component` |
-| *item*.**id** | string | null |  |
-| *item*.**label** | string | null |  |
-| *item*.**icon** | string | null |  |
-| *item*.**Component** | Component | null |  |
+| onChange | function | null |  |
+| label | string | null |  |
+| options | array | null | array of objects, with required keys `id`, `label`, `icon`, `Component` |
+| *option*.**id** | string | null |  |
+| *option*.**label** | string | null |  |
+| *option*.**icon** | string | null |  |
+| *option*.**Component** | Component | null |  |

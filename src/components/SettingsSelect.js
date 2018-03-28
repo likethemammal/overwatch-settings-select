@@ -12,7 +12,6 @@ const { SVG } = general.components
 
 import css from './SettingsSelect.less'
 
-console.log(css)
 import {
     selectedOption as _selectedOption,
 } from '../selectors/select'
