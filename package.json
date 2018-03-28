@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "@likethemammal/general-components": "^0.1.13",
-    "@likethemammal/overwatch-general": "^0.1.10",
+    "@likethemammal/overwatch-general": "^0.1.11",
     "material-ui": "^1.0.0-beta.23",
     "svg-icon": "^0.8.2",
     "underscore": "^1.8.3"

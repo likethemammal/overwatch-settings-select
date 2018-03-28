@@ -6,9 +6,12 @@ overwatch-settings-select
 
 A React component modeling the Overwatch Settings select element
 
+
 ## Installation
 
-Copy it and paste it
+Note: Supports **React 16.2+** for now
+
+  `npm install`
 
 ## Development
 
