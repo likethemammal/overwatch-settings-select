@@ -1,17 +1,17 @@
 {
-  "name": "overwatch-settings-stepper",
+  "name": "overwatch-settings-select",
   "version": "0.1.1",
   "description": "React component modeling the Overwatch Settings the stepper and toggle elements",
   "author": "Chris Dolphin",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/likethemammal/overwatch-settings-stepper.git"
+    "url": "git+https://github.com/likethemammal/overwatch-settings-select.git"
   },
   "bugs": {
-    "url": "https://github.com/likethemammal/overwatch-settings-stepper/issues"
+    "url": "https://github.com/likethemammal/overwatch-settings-select/issues"
   },
-  "homepage": "https://github.com/likethemammal/overwatch-settings-stepper#readme",
+  "homepage": "https://github.com/likethemammal/overwatch-settings-select#readme",
   "keywords": [
     "react"
   ],
