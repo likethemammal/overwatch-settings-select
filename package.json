@@ -1,6 +1,6 @@
 {
   "name": "overwatch-settings-stepper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component modeling the Overwatch Settings the stepper and toggle elements",
   "author": "Chris Dolphin",
   "license": "Apache-2.0",
