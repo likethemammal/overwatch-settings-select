@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your app name</title>
+    <title>Overwatch Settings-Select</title>
     <meta charset="utf-8">
+    <style>
+        html {
+            background:
+                linear-gradient(
+                    125deg,
+                    rgba(255,255,255,0.35),
+                    rgba(255,255,255,0.25)
+                ),
+                url('background_blur.png')
+                no-repeat
+                center center;
+            background-size: cover;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 100px 10px 0 10px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@likethemammal/overwatch-general@0.1.13/lib/fonts.css" />
 </head>
 <body>
-    <div id="app"></div>
-    <script src="/bundle.js"></script>
+<div id="app"></div>
+<script src="/bundle.js"></script>
 </body>
 </html>
