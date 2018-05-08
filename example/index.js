@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 
 import SettingsSelect from '../lib'
 
-const options = ['At the sk', 'fucksd sd', 'Some option']
-const label = 'Some label'
-const selectedIndex = 2
+const options = ['I don\'t know Rick', 'Look at me!', 'I\'m Pickle Riiiiick', 'Wubba lubba dub dub', 'Squanchin\' party bro!']
+const label = 'Oh jeez'
+const selectedIndex = 4
 
 const props = {
     options,

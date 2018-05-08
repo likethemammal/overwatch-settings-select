@@ -5,10 +5,10 @@ import general from '@likethemammal/general-components'
 
 const shared = general.__tests__._shared.tests
 
-import SettingsSelect from '../../../lib'
+import SettingsSelect from '../../../src'
 
-const options = ['At the sk', 'fucksd sd', 'Some option']
-const label = 'Some label'
+const options = ['Bronze', 'Throwers', 'Top 500', 'Overwatch League']
+const label = 'Matchmaking Teamwork'
 const selectedIndex = 2
 const onChange = jest.fn()
 
