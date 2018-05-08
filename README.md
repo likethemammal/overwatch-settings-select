@@ -15,7 +15,7 @@ A React component modeling the Overwatch Settings select element
 
 Note: Requires **React 16.2+** for now
 
-    npm install --save overwatch-settings-stepper
+    npm install --save overwatch-settings-select
     
 ## Usage
 
@@ -37,18 +37,12 @@ When using CSS font-face, the font-family should match whats below:
 
 ### Props
 
-| name        | type           | default  | desc 
---- | --- | --- | --- |
-| defaultColor | string | #323c50 |  |
-| activeColor | string | #ffffff |  |
-| textColor | string | #00c3ff |  |
-| onChange | function | null |  |
-| label | string | null |  |
-| options | array | null | array of objects, with required keys `id`, `label`, `icon`, `Component` |
-| *option*.**id** | string | null |  |
-| *option*.**label** | string | null |  |
-| *option*.**icon** | string | null |  |
-| *option*.**Component** | Component | null |  |
+| name        | required | type           | default  | desc 
+--- | --- | --- | --- | --- |
+| onChange | **`X`**  | function | null | Callback method called when stepper is progressed (clicked) forward or backward; Parameter is the new activeIndex to be set in state in the parent component. |
+| options | **`X`**  | array | null | Array of strings or Components to be displayed as options |
+| selectedIndex | **`X`** | string | null | Index of the selected option, should be stored in parent state and changed during `onChange` |
+| label | | string | null | Label for the component, positioned to the left of the options |
 
 ## Development
 

@@ -21,7 +21,7 @@ const props = {
 
 
 describe('SettingsSelect', () => {
-    // Render a checkbox with label in the document
+
     const component = shallow(
         <SettingsSelect
             {...props}
