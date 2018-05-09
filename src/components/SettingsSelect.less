@@ -3,6 +3,8 @@
 @item_width: 377px;
 
 .container {
+    padding: 3px 0 4px;
+
     &:hover {
         .label {
             background: @gray_faded_setting_hover;
@@ -19,13 +21,12 @@
 
 .inner {
     position: relative;
-    padding-right: @item_width + 7px;
 }
 
 .__text {
     composes: _font_general from '@likethemammal/overwatch-general/lib/general.css';
-    height: 4.3rem;
-    line-height: 4.4rem;
+    height: 3.8rem;
+    line-height: 3.9rem;
     color: hsl(0, 0%, 90%);
 }
 
@@ -60,8 +61,8 @@
 .item {
     composes: __text;
     width: @item_width;
-    line-height: 4.5rem;
-    padding-left: 20px;
+    line-height: 3.7rem;
+    padding-left: 15px;
     letter-spacing: 0.01rem;
     font-size: 2.2rem;
     cursor: pointer;
@@ -99,5 +100,9 @@
     position: absolute;
     right: 5px;
     left: auto;
-    top: -1px;
+    top: 0px;
+
+    height: 25px;
+    width: 25px;
+    padding: 5px 7px;
 }
