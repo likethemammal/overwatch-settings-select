@@ -29,11 +29,40 @@ When using CSS font-face, the font-family should match whats below:
 
 ## Usage
 
-Check out [example/index.js](example/index.js) for exact usage. Descriptions are below.
-
-### Import
-
+Check out [example/index.js](example/index.js) for working example or below for exact usage.
+    
     import SettingsSelect from 'overwatch-settings-select'
+    
+    class Example extends React.Component {
+    
+        state = {
+            selectedIndex: 0,
+        }
+    
+        onChange = (selectedIndex) => {
+            this.setState({
+                selectedIndex,
+            })
+        }
+        
+        render() {
+            const { selectedIndex } = this.state
+    
+            return <SettingsSelect
+                selectedIndex={selectedIndex}
+                onChange={this.onChange}
+                options={
+                    [
+                        'Easy',
+                        'Medium',
+                        'Hard',
+                        'Baller',
+                    ]
+                }
+                label={'Difficulty'}
+            />
+        }
+    }
 
 ### Props
 

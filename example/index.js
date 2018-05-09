@@ -3,26 +3,64 @@ import ReactDOM from 'react-dom'
 
 import SettingsSelect from '../lib'
 
-const props_1 = {
-    options: ['I don\'t know Rick', 'Look at me!', 'I\'m Pickle Riiiiick', 'Wubba lubba dub dub', 'Squanchin\' party bro!'],
-    label: 'Oh jeez',
-    selectedIndex: 4,
+class BaseExample extends React.Component {
+
+    state = {
+        selectedIndex: 0,
+    }
+
+    onChange = (selectedIndex) => {
+        this.setState({
+            selectedIndex,
+        })
+    }
 }
 
-const props_2 = {
-    options: ['Easy', 'Medium', 'Hard', 'Rage'],
-    label: 'Difficulty',
-    selectedIndex: 1,
+class Example1 extends BaseExample {
+    render() {
+        const { selectedIndex } = this.state
+
+        return <SettingsSelect
+            selectedIndex={selectedIndex}
+            onChange={this.onChange}
+            options={
+                [
+                    'I don\'t know Rick',
+                    'Look at me!',
+                    'I\'m Pickle Riiiiick',
+                    'Wubba lubba dub dub',
+                    'Squanchin\' party bro!'
+                ]
+            }
+            label={'Oh jeez'}
+        />
+    }
+}
+
+class Example2 extends BaseExample {
+    render() {
+        const { selectedIndex } = this.state
+
+        return <SettingsSelect
+            selectedIndex={selectedIndex}
+            onChange={this.onChange}
+            options={
+                [
+                    'Easy',
+                    'Medium',
+                    'Hard',
+                    'Rage',
+                ]
+            }
+            label={'Difficulty'}
+        />
+    }
 }
 
 const Example = () => {
     return <div>
-        <SettingsSelect
-            {...props_1}
-        />
-        <SettingsSelect
-            {...props_2}
-        />
+        <Example1/>
+        <Example2/>
     </div>
 }
 
