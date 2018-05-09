@@ -2,19 +2,22 @@
 
 @item_width: 377px;
 
+@row_hover_background: hsla(0, 0%, 15%, 0.25);
+@row_height: 3.8rem;
+
 .container {
     padding: 3px 0 4px;
 
     &:hover {
         .label {
-            background: @gray_faded_setting_hover;
+            background: @row_hover_background;
         }
     }
 
     //low browser support, so cant be combined with :hover selector
     &:focus-within {
         .label {
-            background: @gray_faded_setting_hover;
+            background: @row_hover_background;
         }
     }
 }
@@ -25,7 +28,6 @@
 
 .__text {
     composes: _font_general from '@likethemammal/overwatch-general/lib/general.css';
-    height: 3.8rem;
     line-height: 3.9rem;
     color: hsl(0, 0%, 90%);
 }
@@ -37,11 +39,12 @@
     background: @black_faded_setting;
     transition: background 100ms ease-in;
     font-size: 2.3rem;
+    height: @row_height;
 }
 
 .label__selected {
     composes: label;
-    background: @gray_faded_setting_hover;
+    background: @row_hover_background;
 }
 
 .select {
@@ -52,6 +55,7 @@
 
 .list_override {
     padding-right: 0 !important;
+    margin-top: 2px !important;
 }
 
 .list_root_override {
@@ -66,21 +70,34 @@
     letter-spacing: 0.01rem;
     font-size: 2.2rem;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .list_item {
     composes: item;
-    background: @blue_solid;
+    background: hsl(220, 42%, 17%);
+    padding: 10px 10px 0 11px;
+
+    &:last-child {
+        padding-bottom: 11px;
+    }
 
     &:focus {
         border: 0;
         outline: 0;
-        background: @blue_solid_hover_dark;
     }
 
-    &:hover {
-        background: @blue_solid_hover_dark;
+    &:hover, &:focus {
+        .list_item_inner {
+            background: hsl(196, 69%, 41%);
+        }
     }
+}
+
+.list_item_inner {
+    padding-left: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .active {
@@ -88,6 +105,7 @@
     background: @blue_faded_hover;
     border: 0;
     text-align: left;
+    height: @row_height;
 
     &:focus {
         border: 0;

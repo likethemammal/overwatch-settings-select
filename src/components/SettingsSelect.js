@@ -44,10 +44,12 @@ export default class SettingsSelect extends Component {
         anchorEl: null,
     }
 
-    onMenuOpen = (ev) => {
-        this.setState({ open: true, anchorEl: ev.currentTarget })
+    button
 
-        ev.target.blur()
+    onMenuOpen = (ev) => {
+        this.setState({ open: true, anchorEl: this.button })
+
+        this.button.blur()
     }
 
     onMenuClose = (ev) => {
@@ -75,6 +77,7 @@ export default class SettingsSelect extends Component {
 
                 <div
                     className={!open ? css.label : css.label__selected}
+                    onClick={this.onMenuOpen}
                 >
                     {label}
                 </div>
@@ -82,6 +85,7 @@ export default class SettingsSelect extends Component {
                 <div className={css.select}>
 
                     <button
+                        ref={el => this.button = el}
                         onClick={this.onMenuOpen}
                         className={css.active}
                     >
@@ -108,7 +112,9 @@ export default class SettingsSelect extends Component {
                                 className={css.list_item}
                                 selected={i === selectedIndex}
                             >
-                                {option}
+                                <div className={css.list_item_inner}>
+                                    {option}
+                                </div>
                             </li>
                         })}
                     </Menu>

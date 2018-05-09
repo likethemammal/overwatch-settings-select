@@ -40,12 +40,7 @@ describe('SettingsSelect', () => {
             component.state('open')
         ).toEqual(false)
 
-        component.find('button').simulate('click', {
-            currentTarget: {},
-            target: {
-                blur: jest.fn()
-            },
-        })
+        component.find('button').simulate('click')
 
         expect(
             component.state('open')
