@@ -14,7 +14,7 @@ import css from './SettingsSelect.less'
 
 import {
     selectedOption as _selectedOption,
-} from '../selectors/select'
+} from '../selectors'
 
 const menuOverrideProps = {
     marginThreshold: 0,
@@ -103,8 +103,8 @@ export default class SettingsSelect extends Component {
                     >
                         {_.map(options, (option, i) => {
                             return <li
-                                onClick={this.onSelect.bind(null, i)}
                                 key={i}
+                                onClick={this.onSelect.bind(null, i)}
                                 className={css.list_item}
                                 selected={i === selectedIndex}
                             >

@@ -2,9 +2,10 @@ import {
     createSelector
 } from 'reselect'
 
-import {
-    selectedOption as _selectedOption,
-} from '../units/select'
+
+import general from '@likethemammal/overwatch-general'
+
+const { units } = general
 
 export const options = props => props.options
 export const selectedIndex =  props => props.selectedIndex
@@ -12,6 +13,6 @@ export const selectedIndex =  props => props.selectedIndex
 export const selectedOption = createSelector(
     selectedIndex,
     options,
-    _selectedOption,
+    units.activeOption,
 )
 

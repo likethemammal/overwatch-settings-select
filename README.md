@@ -17,14 +17,6 @@ Note: Requires **React 16.2+** for now
 
     npm install --save overwatch-settings-select
     
-## Usage
-
-Check out [example/index.js](example/index.js) for exact usage. Descriptions are below.
-
-### Import
-
-    import SettingsSelect from 'overwatch-settings-select'
-
 ### Fonts
 
 #### Futura No 2 D DemiBold
@@ -35,11 +27,19 @@ When using CSS font-face, the font-family should match whats below:
 
     font-family: 'Futura No 2 D DemiBold';
 
+## Usage
+
+Check out [example/index.js](example/index.js) for exact usage. Descriptions are below.
+
+### Import
+
+    import SettingsSelect from 'overwatch-settings-select'
+
 ### Props
 
 | name        | required | type           | default  | desc 
 --- | --- | --- | --- | --- |
-| onChange | **`X`**  | function | null | Callback method called when stepper is progressed (clicked) forward or backward; Parameter is the new activeIndex to be set in state in the parent component. |
+| onChange | **`X`**  | function | null | Callback method called when a new option is selected. Parameter is the new selectedIndex to be set in state in the parent component. |
 | options | **`X`**  | array | null | Array of strings or Components to be displayed as options |
 | selectedIndex | **`X`** | string | null | Index of the selected option, should be stored in parent state and changed during `onChange` |
 | label | | string | null | Label for the component, positioned to the left of the options |
