@@ -35,6 +35,11 @@ describe('SettingsSelect', () => {
         component
     ])
 
+    //mock refs
+    component.instance().button = {
+        blur: jest.fn()
+    }
+
     test('if onClick of menu button, open state should be true, Menu should receive open props', () => {
         expect(
             component.state('open')
