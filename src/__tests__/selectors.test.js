@@ -32,7 +32,7 @@ describe('basic selectors', () => {
     })
 })
 
-describe('renderer selectors', () => {
+describe('selectors', () => {
     describe('given a state object', () => {
 
         describe('selectedOption', () => {
