@@ -13,7 +13,11 @@
   },
   "homepage": "https://github.com/likethemammal/overwatch-settings-select#readme",
   "keywords": [
-    "react"
+    "react",
+    "overwatch",
+    "select",
+    "material-ui",
+    "game-ui"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
