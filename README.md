@@ -10,10 +10,11 @@ overwatch-settings-select
 
 A React component modeling the Overwatch Settings select element
 
+![Example](example/example.png)
 
 ## Install
 
-Note: Requires **React 16.2+** for now
+Note: Requires **React 16.2+**
 
     npm install --save overwatch-settings-select
     
@@ -79,9 +80,16 @@ Check out [example/index.js](example/index.js) for working example or below for 
   
 #### Running the example
 
+Install it:
+
+    cd example/; npm install
+    
+Run it while developing (in another terminal window):
+
     cd example/; npm run dev
     
-Open [http://localhost:8080/](http://localhost:8080/) to view example
+    
+Open [http://localhost:8080/](http://localhost:8080/) to see the running example
 
 
 ## Tests
@@ -93,3 +101,7 @@ Open [http://localhost:8080/](http://localhost:8080/) to view example
 Made with 🍊 by [Chris Dolphin](https://github.com/likethemammal)
 
 [![license](https://img.shields.io/github/license/likethemammal/overwatch-settings-select.svg?style=flat-square)](https://github.com/likethemammal/overwatch-settings-select/blob/master/LICENSE)
+
+#### Fonts
+
+The font **Futura No 2 D DemiBold** should be licensed through [MyFonts.com](http://www.myfonts.com/fonts/urw/futura-no-2/futura-no2-d-demi-bold/)
