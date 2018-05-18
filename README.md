@@ -105,3 +105,11 @@ Made with 🍊 by [Chris Dolphin](https://github.com/likethemammal)
 #### Fonts
 
 The font **Futura No 2 D DemiBold** should be licensed through [MyFonts.com](http://www.myfonts.com/fonts/urw/futura-no-2/futura-no2-d-demi-bold/)
+
+
+### Related 
+- [awesome-overwatch](https://github.com/likethemammal/awesome-overwatch) - A curated list of official Overwatch links and community github repos, codepen demos, and chrome extensions.
+- [overwatch-settings-stepper](https://github.com/likethemammal/overwatch-settings-stepper) - A React component modeling the Overwatch Settings the stepper and toggle UI elements.
+- [overwatch-side-nav](https://github.com/likethemammal/overwatch-side-nav) - A React component modeling the Official Overwatch website side-navigation.
+- [overwatch-table](https://github.com/likethemammal/overwatch-table) - A React component modeling the Overwatch custom game table element.
+- [dva-heart-emote](https://github.com/likethemammal/dva-heart-emote) - A WebGL remake of the heart container animation from D.Va's emote.
